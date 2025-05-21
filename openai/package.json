@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "openai": "^4.71.1"
+  },
+  "name": "openai",
+  "version": "1.0.0",
+  "description": "- 调用openai llm 接口？\r - 命令行调用\r      - npm init -y 初始化为node 后端项目\r         npm? node package management 包管理\r      - package.json 项目描述文件\r - openai 提供了sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
