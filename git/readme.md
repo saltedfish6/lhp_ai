@@ -29,13 +29,20 @@
     git status // 查看状态
 
     git log --oneline // 查看提交历史
+    git log --pretty=oneline // 简洁显示
 
     git diff // 查看修改内容
+    比较对象及命令
+
+    工作区&暂存区  git diff <file>
+    工作区&版本库  git diff HEAD <file>
+    暂存区&版本库  git diff --cached <file>
+
 
     git reset --hard HEAD~1 // 回退到上一个版本
     git reset --hard HEAD~2 // 回退到上两个版本
     git reset --hard HEAD~3 // 回退到上三个版本
-
+    git reset --mixed HEAD~ // 这会将 HEAD 回退到上一个提交，取消所有暂存，但保留工作目录中的文件修改。
     - new.txt
     
 
