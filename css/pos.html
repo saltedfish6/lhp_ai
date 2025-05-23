@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* css reset 重置样式：将页面中所有元素的外边距和内边距都设置为 0，消除浏览器默认样式的影响 */
+    *{
+        /* 将所有元素的外边距设置为 0 */
+        margin: 0;
+        /* 将所有元素的内边距设置为 0 */
+        padding: 0;
+    }
+  .box {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .inner-box {
+      width: 150px;
+      height: 150px;
+      background-color: green;
+      position: relative;/*可以相对自身定位*/
+      top: 10px;    
+      left: 10px; 
+      margin-top:20px ;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+     <div class="inner-box">
+        <div class="child-box"></div>
+     </div>
+  </div>
+</body>
+</html>

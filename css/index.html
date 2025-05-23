@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(8, 157, 184);
+            margin: 0;
+        }
+        .container{
+            position: absolute; /* pos:a Emmet缩写 */
+            top:50%;
+            left:50%;/* l:50Emmet缩写 */
+            /* height: 238px; */ /*用来定位的*/
+            width: 238px;/*w:238Emmet缩写 */
+            /* background-color: bisque; *//*用来定位的*/
+            transform: translate(-50%,-50%);/* t:translate(-50%,-50%)Emmet缩写 */   
+        }
+        .ball{
+                width: 100px;
+                height: 100px;
+                border: 8px solid black;
+                border-radius: 50%;
+               display: inline-block; /* d:inline-blockEmmet缩写 */
+                background-color: white;
+                vertical-align: top;
+                position: relative;/*相对定位，子元素相对它定位*/
+        }
+        .face{
+                width: 70px;
+                height: 30px;
+                position: absolute;/*绝对定位，子元素绝对定位，找最近的position不为static的属性定位 */
+                right: 0;
+                top: 30px;
+                border-top-right-radius: 15px;
+                /* background-color: green; */
+        }
+        .eye{
+                width: 15px;
+                height: 14px;
+                border-radius: 50%;/* bdrs:50% Emmet缩写 */
+                border-bottom: 5px solid black;
+
+                position: absolute;/*定位之后，块级能力视觉上就会消失，实际是重叠了*/
+        }
+       .eye-l{
+                left: 10px;
+               
+        }
+        .eye-r{
+                right: 5px;
+               
+        }
+        .eye-r-p{
+                border-top: 5px solid #000;
+                border-bottom: 0px;
+        }
+        .mouth{
+                width: 30px ;
+                height: 14px;
+                border-radius: 50%;
+                border-bottom: 5px solid black;
+                position: absolute;
+                bottom: -5px;
+                transform: translate(3px);
+                left:0;
+                right:0;
+                margin:auto;
+        }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <div id="l-ball" class="ball">
+            <div class="face face-l">
+                <div class="eye eye-l"></div>
+                <div class="eye eye-r"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+        <div id="r-ball" class="ball">
+            <div class="face face-r">
+                <div class="eye eye-l eye-r-p"></div>
+                <div class="eye eye-r eye-r-p"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
