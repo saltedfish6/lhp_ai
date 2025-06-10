@@ -24,7 +24,7 @@ function twoSum(nums, target) {
         
         // 检查我们之前是否已经遇到过这个需要的数字（complement）
         // map.has(complement)会检查哈希表中是否存在这个数字
-        if (map.has(complement)) {
+        if (map.get(complement)) {
             // 如果找到了配对的数字，就返回这两个数字的位置
             // map.get(complement)获取之前存储的那个数字的位置
             // i是当前数字的位置
@@ -58,3 +58,7 @@ console.log(twoSum([3, 2, 4], 6));      // 预期输出: [1, 2]
 // 示例3：数组[3,3]，目标值6
 // 3+3=6，所以应该返回[0,1]（两个3分别在位置0和位置1）
 console.log(twoSum([3, 3], 6));         // 预期输出: [0, 1] 
+
+
+
+

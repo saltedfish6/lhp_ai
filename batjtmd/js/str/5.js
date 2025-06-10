@@ -17,4 +17,3 @@ console.log('8'*'8');// 64
 console.log('8'+5);// 85
 
 
-react

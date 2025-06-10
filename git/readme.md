@@ -22,10 +22,14 @@
     git init // 初始化仓库
     git add README.md // 添加文件到暂存区
     git commit -m "first commit" // # 提交暂存区的修改到本地仓库，并添加提交信息 commit 提交信息
-    git branch -M main // 切换到main分支    
-    git remote add origin https://github.com/saltedfish6/lhp_ai.git // 添加远程仓库
+    git branch -M main // 切换到main分支
+    git branch // 查看分支    
+    git checkout main // 切换到main分支
+    git push --set-upstream origin test1 // 推送到远程仓库  --set-upstream 设置上游
+    git remote add origin https://github.com/saltedfish6/lhp_ai.git // 添加远程仓库 remote 远程仓库 origin 远程仓库名称
     git push -u origin main // 推送到远程仓库
-
+    git pull origin master // 拉取远程仓库的内容到本地仓库
+    git pull origin main // 拉取远程仓库的内容到本地仓库
     git status // 查看状态
 
     git log --oneline // 查看提交历史
