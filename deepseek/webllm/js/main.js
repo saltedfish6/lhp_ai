@@ -31,7 +31,7 @@ const headers = {
     // 内容类型
     'Content-Type': 'application/json', // 设置请求头为 JSON 格式
     //授权
-    'Authorization': 'Bearer sk-0e8c9523ae6c4f6fb4229d7aaadd0ccc' // 设置 API 密钥，用于身份验证
+    'Authorization': 'Bearer sk-xxxxx' // 设置 API 密钥，用于身份验证
 }
 // 请求体
 const payload = {//payload 负载
